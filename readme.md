@@ -7,15 +7,17 @@ I have created this repo to host the code of this awesome book, to make it easie
 ### 环境准备
 #### Windows
 ```bash
+# 放弃老版本
 # Zipline currently supports Python 2.7, 3.5, and 3.6, and may be installed via either pip or conda.
-conda create -n quant python=3.6
+
+# 新版本至少要要python3.8
+# https://zipline.ml4trading.io/index.html
+conda create -n quant python=3.10
 # conda remove --name quant --all
 conda activate quant
 
-# export CYTHON_LANGUAGE_LEVEL=3
-set CYTHON_LANGUAGE_LEVEL=3
+pip install ta-lib
 
-pip install zipline
 
 
 ```
@@ -26,3 +28,7 @@ conda env export > quant.yaml
 # 恢复
 conda env create -f quant.yaml
 ```
+
+
+#### 参考资料
++ [《Windows10环境安装Python的Zipline包》](http://www.nohup.cc/article/340/)
