@@ -16,9 +16,8 @@ conda create -n quant python=3.10
 # conda remove --name quant --all
 conda activate quant
 
-pip install ta-lib
-
-
+conda install ta-lib
+conda install -c ml4t zipline-reloaded
 
 ```
 #### 保存或者恢复环境
